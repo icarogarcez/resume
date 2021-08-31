@@ -195,11 +195,32 @@ font-weight: var(--font-medium);
   bottom: var(--header-height);
 }
 
-/* Ativar menu link  */
-
+/* Menu link */
+.active-link{
+  color: var(--title-color);
+  }
 
 /* Home */
+.home{
+  position: relative;
+}
 
+.home__container{
+  gap: 3rem;
+}
+
+.home__data{
+  gap: .5rem;
+  text-align: center;
+}
+
+.home__img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
 
 /* Social */
 
