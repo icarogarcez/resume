@@ -222,8 +222,67 @@ font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
 
-/* Social */
+.home__title{
+  font-size: var(--h1-font-size);
+}
 
+.home_profession{
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.home__address{
+  gap: 1rem;
+}
+
+.home_information{
+  display: flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+}
+
+.home__icon{
+  font-size: 1.2rem;
+  margin-right: .25rem;
+}
+
+.home__button-movil{
+  display:inline-block;
+  border: 2px solid var(--text-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  border-radius: .25rem;
+  transition: .3s;
+  font-weight: var(--font-medium);
+  margin-top: var(--mb-3);
+}
+
+.home__button-movil:hover{
+  background-color: var(--text-color);
+  color: var(--container-color);
+}
+
+/* Social */
+.social__container{
+  grid-template-columns: max-content;
+  gap: 1rem;
+}
+
+.social__link{
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+.social__link:hover{
+  color: var(--title-color);
+}
+
+.social__icon{
+  font-size: 1.2rem;
+  margin-right: .25rem;
+}
 
 /* Perfil */
 
