@@ -143,7 +143,7 @@ transition: .3s;
     position: fixed;
     bottom: -100%;
     left: 0;
-    width: 100px;
+    width: 100%;
     padding: 2rem 1.5rem;
     background-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
@@ -153,9 +153,14 @@ transition: .3s;
   }
 }
 
+.nav__logo{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
 .nav_logo, .nav__toggle{
-color: var(--title-color);
-font-weight: var(--font-medium);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 }
 
 .nav__toggle{
@@ -164,12 +169,13 @@ font-weight: var(--font-medium);
 }
 
 .nav__item{
+  text-transform: none;
   text-align: center;
 }
 
 .nav__list{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   gap: 2rem;
 }
 
