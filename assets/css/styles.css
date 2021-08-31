@@ -347,21 +347,25 @@ transition: .3s;
 }
 
 /* Hab e linguagens */
-.skills__content{
+.skills__content,
+.languages__content{
   grid-template-columns: repeat(2, 1fr);
 }
 
-.skills__content{
+.skills__content,
+.languages__content{
   gap: 0;
 }
 
-.skills__name{
+.skills__name,
+.languages__name{
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
-.skills__circle{
+.skills__circle,
+.languages_circle{
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -375,9 +379,6 @@ transition: .3s;
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
-
-/* Referências */
-
 
 /* Interesses */
 
