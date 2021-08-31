@@ -364,16 +364,6 @@ transition: .3s;
   margin-bottom: var(--mb-3);
 }
 
-.skills__circle,
-.languages_circle{
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  background-color: var(--text-color);
-  border-radius: 50%;
-  margin-right: .75rem;
-}
-
 /* Certificados */
 .certificate__title{
   font-size: var(--h3-font-size);
@@ -381,8 +371,22 @@ transition: .3s;
 }
 
 /* Interesses */
+.interests__container{
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-2);
+}
 
+.interests__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.interests__icon{
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: .25rem;
+}
 /* Scroll top */
 
 
