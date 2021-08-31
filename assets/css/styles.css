@@ -120,7 +120,7 @@ img{
 }
 
 .l-header{
-width: 100px;
+width: 100%;
 position: fixed;
 bottom: 0;
 left: 0;
@@ -296,7 +296,39 @@ transition: .3s;
 }
 
 /* Educação e experiência */
+.education__content{
+  display: flex;
+}
 
+.education__time{
+  padding-right: 1rem;
+}
+
+.education__rounder{
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: var(--text-color-light);
+  border-radius: 50%;
+  margin-top: .25rem;
+}
+
+.education__line{
+  display: block;
+  width: 2px;
+  height: 110%;
+  background-color: var(--text-color-light);
+  transform: translate(7px, 0);
+}
+
+.education__data{
+  gap: .5rem;
+}
+
+.education__title{
+  font-size: var(--h3-font-size);
+}
 
 /* Hab e linguagens */
 
