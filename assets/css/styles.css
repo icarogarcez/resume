@@ -46,10 +46,28 @@ html{
 }
 
 /* Variações tema dark */
-
+body.dark-theme{
+  --title-color: #F2F2F2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+}
 
 /* Botão light/dark */
+.change-theme{
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+.change-theme:hover{
+  color: var(--title-color);
+}
 
 /* Variações de escala da fonte */
 
