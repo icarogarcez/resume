@@ -387,8 +387,31 @@ transition: .3s;
   color: var(--text-color-light);
   margin-bottom: .25rem;
 }
-/* Scroll top */
+/* Rolar a tela pra cima */
+.scrolltop{
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background-color: var(--container-color-alt);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
 
+.scrolltop__icon{
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.show-scroll{
+  visibility: visible;
+  bottom: 5rem;
+}
 
 /* Media Queries */
 /* Dispositivos pequenos - menu de duas colunas  */
