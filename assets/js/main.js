@@ -71,26 +71,46 @@ themeButton.addEventListener('click', () => {
 })
 
 /* Tamanho e impressão pdf */ 
-
+function scaleCv(){
+    document.body.classList.add('scale-cv')
+}
 
 /* Remover o tamanho depois do download */ 
-
+function removeScale(){
+    document.body.classList.remove('scale-cv')
+}
 
 /* Gerar o pdf */ 
-
 // PDF área
+let areaCv = document.getElementById('area-cv')
+let resumeButton = document.getElementById('resume-button')
 
+// Opção de impressão
+let opt = {
+  margin:       0,
+  filename:     'ÍcaroGarcezCV.pdf',
+  image:        { type: 'jpeg', quality: 0.98 },
+  html2canvas:  { scale: 4 },
+  jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+};
 
-// HTML/PDF opções
-
-
-// Função para chamar as opções de areaCv e Html2Pdf 
-
+// Gerar o pdf 
+function generateResume(){
+    html2pdf(areaCv, opt)
+}
 
 // 3 funções são chamadas quando o botão é clicado: 
+resumeButton.addEventListener('click', () => {
 
     // 01. A class .scale-cv é adicionada ao corpo, onde é reduzida o tamanho dos elementos
+    scaleCv()
 
     // 02. O pdf é gerado
+    generateResume()
 
-    // 03. A classe .scale-cv é removida do corpo depois de 5 segundos para voltar ao tamanho normal
+
+    // 03. A classe .scale-cv é removida do corpo depois de 2 segundo para voltar ao tamanho normal
+    setTimeout(removeScale, 2000)
+
+})
+

@@ -81,7 +81,7 @@ body.scale-cv{
 
 /* Botão pdf download */
 .generate-pdf{
-  display: none;
+  display: inline-block;
   position: absolute;
   top: 2.2rem;
   left: 0;
@@ -164,6 +164,19 @@ body.scale-cv{
   width: 1px;
   height: 110%;
   transform: translate(5px, 0);
+}
+
+.scale-cv .education__data,
+.scale-cv .experience__data{
+  gap: .25rem;
+}
+
+.scale-cv .skills__name{
+  margin-bottom: var(--mb-1);
+}
+
+.scale-cv .interests__container{
+  column-gap: 2.5rem;
 }
 
 body{
@@ -357,22 +370,6 @@ transition: .3s;
 .home__icon{
   font-size: 1.2rem;
   margin-right: .25rem;
-}
-
-.home__button-movil{
-  display:inline-block;
-  border: 2px solid var(--text-color);
-  color: var(--title-color);
-  padding: 1rem 2rem;
-  border-radius: .25rem;
-  transition: .3s;
-  font-weight: var(--font-medium);
-  margin-top: var(--mb-3);
-}
-
-.home__button-movil:hover{
-  background-color: var(--text-color);
-  color: var(--container-color);
 }
 
 /* Social */
@@ -572,10 +569,6 @@ transition: .3s;
 
   .home__container{
     gap: 1.5rem;
-  }
-
-  .home__button-movil{
-    display: none;
   }
 }
 
