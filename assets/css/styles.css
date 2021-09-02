@@ -7,11 +7,11 @@
   
   /* Cores */
   --title-color: #0B0A0A;
-  --text-color: #403A3A;
-  --text-color-light: #707070;
+  --text-color: #453635;
+  --text-color-light: #7C8465;
   --container-color: #FAFAFA;
-  --container-color-alt: #F0EFEF;
-  --body-color: #FCFCFC;
+  --container-color-alt: #D8DBD0;
+  --body-color: #F2F3EF;
 
   /* Tamanho e Tipografia */
   --body-font: 'Poppins', sans-serif;
@@ -47,8 +47,8 @@ html{
 
 /* Variações tema dark */
 body.dark-theme{
-  --title-color: #F2F2F2;
-  --text-color: #BFBFBF;
+  --title-color: #D8DBD0;
+  --text-color: #F2F3EF;
   --container-color: #212121;
   --container-color-alt: #181616;
   --body-color: #2B2B2B;
